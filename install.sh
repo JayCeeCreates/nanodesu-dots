@@ -73,6 +73,7 @@ if [[ $EUID -ne 0 ]]; then
   echo "Finishing touches..."
   sleep 2
   betterlockscreen -u './resources/lock.jpg'
+  sudo chsh $USER -s /bin/zsh
 
   echo "Cleaning up..."
   sleep 2
