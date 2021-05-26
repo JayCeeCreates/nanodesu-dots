@@ -72,7 +72,7 @@ if [[ $EUID -ne 0 ]]; then
   cp -rv {.config,.icons,.mozilla,.themes,.zshrc,.gtkrc-2.0} $HOME/
   sudo mkdir -p /usr/share/wallpapers
   sudo cp -v './resources/bg.png' /usr/share/wallpapers/
-  cp -v './resources/fetch.png' '$HOME/.config/neofetch/source.png'
+  cp -v './resources/fetch.png' '~/.config/neofetch/source.png'
   sudo bash -c 'cp ./.zshrc-root ~/.zshrc'
   echo "Finished copying files."
   sleep 3
