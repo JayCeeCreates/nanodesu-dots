@@ -1,5 +1,9 @@
 # Nanodesu!
 
+<p align="center">
+<img src="https://github.com/JayCeeCreates/nanodesu-dots/raw/main/resources/fetch.png">
+</p>
+
 *"Konrushi~! Uruha Rushia nanodesu!"*
 
 Hang on- another rice? I swear I'm not doing this full time, I'm just bored during C*VID o k a y
