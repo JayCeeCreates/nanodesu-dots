@@ -31,6 +31,7 @@ if [[ $EUID -ne 0 ]]; then
     echo "Installing X..."
     sleep 1
     sudo pacman -S xorg --noconfirm --needed
+    sudo pacman -Rns xorg-xbacklight > ./tmp/pacmanlog
     echo "X has been installed."
   fi
   sleep 3
@@ -54,7 +55,7 @@ if [[ $EUID -ne 0 ]]; then
 
   echo "Ricing your system..."
   sleep 2
-  yay -S i3 polybar-git betterlockscreen-git cava dunst notification-daemon htop kitty pcmanfm gvfs neofetch feh hsetroot picom polybar-git alsa-utils pulseaudio pulseaudio-alsa acpi acpilight rofi xarchiver unzip zip unrar p7zip nerd-fonts-noto-sans-regular-complete gnu-free-fonts lxappearance adwaita-icon-theme playerctl noto-fonts-cjk firefox-nightly xss-lock bc zsh --noconfirm --needed
+  yay -S i3 polybar-git betterlockscreen-git cava-git dunst notification-daemon htop kitty pcmanfm gvfs neofetch feh hsetroot picom polybar-git alsa-utils pulseaudio pulseaudio-alsa acpi acpilight rofi xarchiver unzip zip unrar p7zip nerd-fonts-noto-sans-regular-complete gnu-free-fonts lxappearance adwaita-icon-theme playerctl noto-fonts-cjk firefox-nightly xss-lock bc zsh zsh-autosuggestions zsh-syntax-highlighting --needed
   sudo rm -rf /usr/lib/systemd/system/betterlockscreen@.service
 
   echo "A display manager is often recommended in case you install another window manager or a desktop environment. You can choose not to install a display manager and use startx."
@@ -62,8 +63,8 @@ if [[ $EUID -ne 0 ]]; then
   sleep 3
   
   echo "Copying files..."
-  cp -rv {.config,.icons,.mozilla,.themes,.zshrc} $HOME/
-  mkdir -p /usr/share/wallpapers
+  cp -rv {.config,.icons,.mozilla,.themes,.zshrc,.gtkrc-2.0} $HOME/
+  sudo mkdir -p /usr/share/wallpapers
   sudo cp -v './resources/bg.png' /usr/share/wallpapers/
   cp -v './resources/fetch.png' '$HOME/.config/neofetch/source.png'
   sudo bash -c 'cp ./.zshrc-root ~/.zshrc'
@@ -72,8 +73,10 @@ if [[ $EUID -ne 0 ]]; then
 
   echo "Finishing touches..."
   sleep 2
+  mkdir -p $HOME/.cache/i3lock
   betterlockscreen -u './resources/lock.jpg'
   sudo chsh $USER -s /bin/zsh
+  sudo groupadd video
   sudo usermod -aG video $USER
 
   echo "Cleaning up..."
