@@ -68,6 +68,7 @@ if [[ $EUID -ne 0 ]]; then
   sleep 3
   
   echo "Copying files..."
+  sleep 2
   cp -rv {.config,.icons,.mozilla,.themes,.zshrc,.gtkrc-2.0} $HOME/
   sudo mkdir -p /usr/share/wallpapers
   sudo cp -v './resources/bg.png' /usr/share/wallpapers/
