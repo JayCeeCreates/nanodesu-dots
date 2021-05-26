@@ -31,6 +31,7 @@ Note that this rice is only tested on a laptop.
 - **Web Browser:** Firefox (minimal-functional-fox)
 - **Linux Distro:** Arch Linux
 - **Notifications:** dunst
+- **Visualizer:** Cava
 - **Theme:** Nanodesu (made using Oomox)
 - **Colors:** Generated using pywal, slightly modified
 - **Fonts:**
