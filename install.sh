@@ -48,6 +48,11 @@ if [[ $EUID -ne 0 ]]; then
 	  sleep 1
 	  sudo pacman -S xf86-video-amdgpu --noconfirm --needed
 	  echo "xf86-video-amdgpu has been installed."
+  elif lspci -v | grep -i vmware > /dev/null ; then
+	  echo "Installing xf86-video-vmware..."
+	  sleep 1
+	  sudo pacman -S xf86-video-vmware --noconfirm --needed
+	  echo "xf86-video-vmware has been installed."
   else
 	  echo "None detected. Skipping..."
   fi
