@@ -23,7 +23,7 @@ case "$chosen" in
         ;;
 
     "$lock")
-        betterlockscreen --off 5 -l dim
+        betterlockscreen -l dim
         ;;
 
     "$suspend")
