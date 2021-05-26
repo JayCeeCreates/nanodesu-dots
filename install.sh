@@ -16,7 +16,7 @@ if [[ $EUID -ne 0 ]]; then
     cd tmp
     git clone https://aur.archlinux.org/yay-git yay && cd yay
     makepkg -si --noconfirm --needed
-    sudo pacman -Rns go
+    sudo pacman -Rns go --noconfirm
     cd ..
     cd ..
     echo "yay has been installed."
@@ -69,7 +69,7 @@ if [[ $EUID -ne 0 ]]; then
   
   echo "Copying files..."
   sleep 2
-  cp -rv {.cache,.config,.icons,.mozilla,.themes,.zshrc,.gtkrc-2.0} $HOME/
+  cp -r {.cache,.config,.icons,.mozilla,.themes,.zshrc,.gtkrc-2.0} $HOME/
   sudo mkdir -p /usr/share/wallpapers
   sudo cp -v './resources/bg.png' /usr/share/wallpapers/
   cp -v './resources/fetch.png' $HOME/.config/neofetch/source.png
