@@ -45,7 +45,7 @@ bindsym $mod+Shift+s exec --no-startup-id scrot -s
 bindsym $mod+l exec --no-startup-id betterlockscreen -l dim
 
 # Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+floating_modifier Mod1
 
 # start a terminal
 bindsym Mod1+Shift+t exec i3-sensible-terminal

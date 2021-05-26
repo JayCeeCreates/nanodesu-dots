@@ -1,8 +1,6 @@
 configuration {
   font:             "Cantarell 10";
   icon-theme:       "Papirus";
-  me-select-entry:  "MouseSecondary";
-  me-accept-entry:  "MousePrimary";
 }
 
 * {
