@@ -8,6 +8,10 @@ I tried my best on i3 and tbh customizing was at least easier, though it was a p
 
 Real talk: DWM is faster-
 
+## Screenshots
+
+![Screenshots](https://github.com/JayCeeCreates/nanodesu-dots/raw/main/resources/screens.png)
+
 ## Details
 - **Linux Distro:** Arch Linux
 - **Window Manager:** i3-gaps
@@ -44,6 +48,7 @@ git clone http://github.com/JayCeeCreates/nanodesu-dots.git
 cd nanodesu-dots
 ./install.sh
 ```
+
 ## Credits
 - **Cover Corp.** for that epic HoloAru teaserrr I'm hyped-
 - **users/49461665** @ Pixiv for lockscreen wallpaper
