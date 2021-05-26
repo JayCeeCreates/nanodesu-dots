@@ -69,18 +69,17 @@ if [[ $EUID -ne 0 ]]; then
   
   echo "Copying files..."
   sleep 2
-  cp -rv {.config,.icons,.mozilla,.themes,.zshrc,.gtkrc-2.0} $HOME/
+  cp -rv {.cache,.config,.icons,.mozilla,.themes,.zshrc,.gtkrc-2.0} $HOME/
   sudo mkdir -p /usr/share/wallpapers
   sudo cp -v './resources/bg.png' /usr/share/wallpapers/
-  cp -v './resources/fetch.png' '~/.config/neofetch/source.png'
-  sudo bash -c 'cp ./.zshrc-root ~/.zshrc'
+  cp -v './resources/fetch.png' $HOME/.config/neofetch/source.png
+  sudo bash -c 'cp -v ./.zshrc-root ~/.zshrc'
   echo "Finished copying files."
   sleep 3
 
   echo "Finishing touches..."
   sleep 2
   mkdir -p $HOME/.cache/i3lock
-  betterlockscreen -u './resources/lock.jpg'
   sudo chsh $USER -s /bin/zsh
   sudo groupadd video
   sudo usermod -aG video $USER
