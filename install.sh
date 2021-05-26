@@ -60,7 +60,7 @@ if [[ $EUID -ne 0 ]]; then
 
   echo "Ricing your system..."
   sleep 2
-  yay -S i3-gaps i3blocks i3status i3lock-color-git polybar-git betterlockscreen-git cava-git dunst notification-daemon htop kitty pcmanfm gvfs neofetch feh hsetroot picom polybar-git alsa-utils pulseaudio pulseaudio-alsa acpi acpilight rofi xarchiver unzip zip unrar p7zip nerd-fonts-noto-sans-regular-complete gnu-free-fonts lxappearance adwaita-icon-theme playerctl noto-fonts-cjk firefox-nightly xss-lock bc zsh zsh-autosuggestions zsh-syntax-highlighting --needed
+  yay -S i3-gaps i3blocks i3status i3lock-color-git polybar-git betterlockscreen-git scrot cava-git dunst notification-daemon htop kitty pcmanfm gvfs neofetch feh hsetroot picom polybar-git alsa-utils pulseaudio pulseaudio-alsa acpi acpilight rofi xarchiver unzip zip unrar p7zip nerd-fonts-noto-sans-regular-complete gnu-free-fonts lxappearance adwaita-icon-theme playerctl noto-fonts-cjk firefox-nightly xss-lock bc zsh zsh-autosuggestions zsh-syntax-highlighting --needed
   sudo rm -rf /usr/lib/systemd/system/betterlockscreen@.service
 
   echo "A display manager is often recommended in case you install another window manager or a desktop environment. You can choose not to install a display manager and use startx."
