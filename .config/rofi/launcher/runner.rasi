@@ -1,0 +1,69 @@
+configuration {
+  show-icons:           true;
+  display-drun:         "";
+  drun-display-format:  "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+}
+
+window {
+  width:                512px;
+  location:             center;
+  padding:              32px;
+  children:             [ inputbar, listview ];
+}
+
+prompt {
+  padding:              0 0 0 8px;
+}
+
+entry {
+  expand:               true;
+  horizontal-align:     0;
+  placeholder:          "Search";
+  padding:              0 0 0 16px;
+  blink:                true;
+}
+
+inputbar {
+  expand:               false;
+	border:               2px;
+  border-radius:        20px;
+	border-color:         #8ee8c47f;
+  padding:              8px;
+  margin:               0 0 16px 0;
+}
+
+listview {
+  cycle:                false;
+  layout:               vertical;
+  dynamic:              true;
+  lines:                8;
+}
+
+mainbox {
+    children:           [ inputbar, listview ];
+    spacing:            0%;
+    padding:            0%;
+}
+
+element {
+  spacing:              4px;
+  border-radius:        0%;
+  padding:              8px 0;
+  margin:               4px;
+}
+
+element-icon {
+  size:                 32px;
+  padding:              0 0 0 16px;
+}
+
+element-text {
+    expand:             true;
+    vertical-align:     0.5;
+    margin:             0 16px;
+}
+
+element.selected {
+  border:               0% 0% 0% 0%;
+  border-radius:        16px;
+}
