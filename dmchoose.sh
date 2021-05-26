@@ -10,7 +10,7 @@ select choice in "${dm[@]}"; do
 	    sudo cp ./lightdm.conf /etc/lightdm/lightdm.conf
 	    sudo systemctl enable lightdm
 	    echo "$choice has been installed. A reboot may be required."
-	    exit
+	    pkill -f ./dmchoose.sh
             ;;
         "GDM")
 	    echo "Installing $choice..."
@@ -18,7 +18,7 @@ select choice in "${dm[@]}"; do
 	    sudo pacman -S gdm --noconfirm --needed
 	    sudo systemctl enable gdm
 	    echo "$choice has been installed. A reboot may be required."
-	    exit
+	    pkill -f ./dmchoose.sh
             ;;
         "SDDM")
 	    echo "Installing $choice..."
@@ -26,7 +26,7 @@ select choice in "${dm[@]}"; do
 	    sudo pacman -S sddm --noconfirm --needed
 	    sudo systemctl enable sddm
 	    echo "$choice has been installed. A reboot may be required."
-	    exit
+	    pkill -f ./dmchoose.sh
             ;;
 	"startx")
 	    echo "Initializing $choice..."
@@ -34,7 +34,7 @@ select choice in "${dm[@]}"; do
 	    sudo pacman -S xorg-xinit --noconfirm --needed
 	    echo 'exec i3' > $HOME/.xinitrc
 	    echo "Xinit has been installed. You may now use startx."
-	    exit
+	    pkill -f ./dmchoose.sh
 	    ;;
         *) echo "Invalid option $REPLY" && sleep 2;;
     esac
