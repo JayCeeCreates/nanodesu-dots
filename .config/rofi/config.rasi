@@ -1,0 +1,19 @@
+configuration {
+  font:             "Cantarell 10";
+  icon-theme:       "Papirus";
+}
+
+* {
+  background-color:	#00000000;
+  text-color:		    #60939F;
+}
+
+window {
+  background-color:	#03121C;
+  y-offset:		      40px;
+}
+
+element.selected {
+  background-color:	#8EE8C4;
+  text-color:		    #03121C;
+}

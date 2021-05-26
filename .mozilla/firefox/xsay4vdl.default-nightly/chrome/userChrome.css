@@ -1,0 +1,228 @@
+:root {
+
+   /* Minimal Functional Fox variables*/
+  --mff-nav-toolbar-padding: 8px;
+  --mff-tab-border-radius: 0px;
+  --mff-tab-font-family: "Cantarell";
+  --mff-tab-font-size: 10pt;
+  --mff-tab-font-weight: 400;
+  --mff-tab-height: 32px;
+  --mff-urlbar-font-family: "Cantarell";
+  --mff-urlbar-font-size: 10pt;
+  --mff-urlbar-results-font-family: "Cantarell";
+  --mff-urlbar-results-font-size: 10pt;
+
+  /* Overriden Firefox variables*/
+  --urlbar-separator-color: transparent !important;
+}
+
+.tab-background:not[visuallyselected] {
+  opacity: 0.5 !important;
+}
+
+#titlebar {
+  appearance: none !important;
+  -moz-box-ordinal-group: 3 !important;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: none !important;
+}
+
+.tab-background {
+  border: none !important;
+}
+
+.tabbrowser-arrowscrollbox {
+  margin-inline-start: 4px !important;
+  margin-inline-end: 0px !important;
+}
+
+.tab-close-button {
+ display: none !important;
+}
+
+.tab-text {
+  font-family: var(--mff-tab-font-family);
+  font-weight: var(--mff-tab-font-weight);
+  font-size: var(--mff-tab-font-size) !important;
+}
+
+.titlebar-spacer {
+  display: none !important;
+}
+
+hbox.tab-content .tab-icon-image {
+  display: none !important;
+}
+
+hbox.tab-content[pinned=true] .tab-icon-image {
+  display: initial !important;
+}
+
+hbox.tab-content[pinned=true] .tab-text {
+  display: none !important;
+}
+
+.tab-label-container:not([textoverflow]) {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 50% !important;
+  max-width: 50% !important;
+  min-width: 50% !important;
+}
+
+.tab-icon-overlay {
+  opacity: 1.0 !important;
+}
+
+.tab-secondary-label {
+  display: none !important;
+}
+
+#urlbar-results {
+  font-family: var(--mff-urlbar-results-font-family);
+  font-weight: var(--mff-urlbar-results-font-weight);
+  font-size: var(--mff-urlbar-results-font-size) !important;
+}
+
+.urlbarView-row[type="bookmark"] > span{
+  color: green !important;
+}
+
+.urlbarView-row[type="switchtab"] > span{
+  color: orange !important;
+}
+
+.urlbarView-url, .search-panel-one-offs-container {
+  font-family: var(--mff-urlbar-font-family);
+  font-weight: var(--mff-urlbar-results-font-weight);
+  font-size: var(--mff-urlbar-font-size) !important;
+}
+
+.urlbarView-favicon, .urlbarView-type-icon {
+  display: none !important;
+}
+
+#urlbar-input {
+  font-size: var(--mff-urlbar-font-size) !important;
+  font-family: var(--mff-urlbar-font-family) !important;
+  font-weight: var(--mff-urlbar-font-weight)!important;
+  text-align: center !important;
+  padding: 0 50px 0 50px !important;
+}
+
+#tracking-protection-icon-container, #identity-box {
+  display: none;
+}
+
+#back-button > .toolbarbutton-icon{
+  --backbutton-background: transparent !important;
+  border: none !important;
+}
+
+toolbar {
+  background-color: var(--toolbar-bgcolor);
+  background-image: none !important;
+}
+
+#urlbar-background {
+  opacity: .90 !important;
+}
+
+#navigator-toolbox, toolbaritem {
+  border: none !important;
+}
+
+#urlbar-background {
+  border: none !important;
+}
+
+box.panel-arrowbox {
+  display: none;
+}
+
+box.panel-arrowcontent {
+  border-radius: 8px !important;
+  border: none !important;
+}
+
+tab.tabbrowser-tab {
+  overflow: hidden;
+}
+
+tab.tabbrowser-tab:hover {
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
+image#star-button {
+  display: none;
+}
+
+#nav-bar {
+  -moz-window-dragging: drag;
+  background-color: var(--toolbar-bgcolor);
+}
+
+toolbar#nav-bar {
+  padding: 4px !important;
+}
+
+#urlbar-container {
+  -moz-window-dragging: drag !important;
+}
+
+#urlbar {
+  max-width: 70% !important;
+  margin: 0 15% !important;
+}
+
+.megabar[breakout-extend="true"]:not([open="true"]) > #urlbar-background {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+toolbarbutton {
+  box-shadow: none !important;
+}
+
+.close-icon, .urlbar-icon {
+  fill: var(--mff-icon-color) !important;
+}
+
+.sidebar-placesTree {
+  color: var(--mff-sidebar-color) !important;
+}
+
+#sidebar-switcher-target {
+/*   color: white !important; */
+}
+
+#sidebar-box {
+  --sidebar-background-color: var(--mff-sidebar-bg) !important;
+}
+
+splitter#sidebar-splitter {
+  opacity: 0 !important;
+}
+
+splitter#sidebar-splitter {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+image#sidebar-icon {
+  display: none;
+}
+
+.panel-arrowcontent {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+toolbarseparator {
+  display: none;
+}
+

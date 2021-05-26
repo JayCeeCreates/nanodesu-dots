@@ -1,0 +1,19 @@
+# configuration file for betterlockscreen
+
+insidecolor=00000032
+ringcolor=03121cff
+keyhlcolor=d23c3dff
+bshlcolor=d23c3dff
+separatorcolor=00000000
+insidevercolor=00000000
+insidewrongcolor=d23c3dff
+ringvercolor=ffffffff
+ringwrongcolor=ffffffff
+verifcolor=ffffffff
+timecolor=ffffffff
+datecolor=ffffffff
+loginbox=000000ff
+font="Cantarell"
+locktext='Konrushi~'
+lock_timeout=5
+time_format='%I:%M %p'
