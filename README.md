@@ -8,6 +8,8 @@ I tried my best on i3 and tbh customizing was at least easier, though it was a p
 
 Real talk: DWM is faster-
 
+Note that this rice is only tested on a laptop.
+
 ## Screenshots
 
 ![Screenshots](https://github.com/JayCeeCreates/nanodesu-dots/raw/main/resources/screens.png)
@@ -48,6 +50,45 @@ git clone http://github.com/JayCeeCreates/nanodesu-dots.git
 cd nanodesu-dots
 ./install.sh
 ```
+
+## Controls
+
+### Keyboard
+
+| Keybinds                | Function                |
+| ----------------------- | ----------------------- |
+| Super Key               | Mod                     |
+| Alt + Drag              | Drag floating window    |
+| Alt + Shift + T         | Open terminal           |
+| Mod                     | Open launcher           |
+| Mod + 1 2 3 4 5         | Switch workspace        |
+| Mod + Q                 | Toggle resize mode      |
+| Mod + W / Alt + F4      | Kill window             |
+| Mod + E                 | Open file manager       |
+| Mod + R                 | Open runner             |
+| Mod + F                 | Toggle fullscreen       |
+| Mod + H                 | Trigger horizonal split |
+| Mod + L                 | Lock system             |
+| Mod + V                 | Trigger vertical split  |
+| Mod + ← ↑ ↓ →           | Move focus to window    |
+| Mod + Shift + 1 2 3 4 5 | Switch workspace        |
+| Mod + Shift + R         | Restart i3              |
+| Mod + Shift + S         | Screenshot region       |
+| Mod + Shift + ← ↑ ↓ →   | Move focused window     |
+| ← ↑ ↓ → (while resize)  | Resize window           |
+
+### Mouse
+
+| Click on                  | Function          |
+| ------------------------- | ----------------- |
+| CPU/RAM percentage (left) | Open htop         |
+| WiFi signal (right)       | Open nmtui        |
+| Brightness (scroll)       | Adjust brightness |
+| Volume (left)             | Mute sound        |
+| Volume (scroll)           | Adjust volume     |
+| Player (left)             | Previous song     |
+| Player (middle)           | Play/Pause song   |
+| Player (right)            | Next song         |
 
 ## Credits
 - **Cover Corp.** for that epic HoloAru teaserrr I'm hyped-
