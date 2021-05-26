@@ -74,6 +74,7 @@ if [[ $EUID -ne 0 ]]; then
   sleep 2
   betterlockscreen -u './resources/lock.jpg'
   sudo chsh $USER -s /bin/zsh
+  sudo usermod -aG video $USER
 
   echo "Cleaning up..."
   sleep 2
