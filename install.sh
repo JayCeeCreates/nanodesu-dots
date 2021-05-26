@@ -38,7 +38,7 @@ if [[ $EUID -ne 0 ]]; then
 
   echo "Detecting video driver..."
   sleep 2
-  if lspci -v | grep -i intel > /dev/null ; then
+  if lspci -v | grep -i 'intel.*hd' > /dev/null ; then
 	  echo "Installing xf86-video-intel..."
 	  sleep 1
 	  sudo pacman -S xf86-video-intel --noconfirm --needed
