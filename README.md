@@ -46,14 +46,27 @@ btw i use arch
 
 ## Installation
 
-Some commands provided in the executable are for Arch Linux tho sooo
-
-If I'm lazy enough from my responsibilities (lmao) I might try it on Debian-
+Clone the repository first.
 
 ```
 git clone http://github.com/JayCeeCreates/nanodesu-dots.git
 cd nanodesu-dots
-./install.sh
+```
+
+### For Arch-based distros
+
+I only tested this on Arch Linux.
+
+```
+./install-arch.sh
+```
+
+### For Debian-based distros
+
+I only tested this on Ubuntu.
+
+```
+./install-debian.sh
 ```
 
 ## Controls
