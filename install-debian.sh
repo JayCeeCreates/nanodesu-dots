@@ -119,6 +119,7 @@ if [[ $EUID -ne 0 ]]; then
   sudo chsh $USER -s /bin/zsh
   sudo groupadd video
   sudo usermod -aG video $USER
+  sudo sed -i "/session-wrapper=/etc/lightdm/Xsession/c\ " /etc/lightdm/lightdm.conf
 
   echo "Cleaning up..."
   sleep 2
