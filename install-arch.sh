@@ -77,7 +77,7 @@ if [[ $EUID -ne 0 ]]; then
   sudo rm -rf /usr/lib/systemd/system/betterlockscreen@.service
 
   echo "A display manager is often recommended in case you install another window manager or a desktop environment. You can choose not to install a display manager and use startx."
-  bash -c ./dmchoose.sh
+  bash -c ./dmchoose-arch.sh
   sleep 3
   
   echo "Copying files..."

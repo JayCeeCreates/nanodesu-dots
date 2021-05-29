@@ -10,6 +10,7 @@ YI=1
 
 hsetroot -solid '#000000' &
 picom -f &
+compton -f &
 feh --bg-scale /usr/share/wallpapers/bg.png &
 playerctld &
 dunst &
