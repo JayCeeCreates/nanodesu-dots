@@ -109,5 +109,5 @@ I only tested this on Ubuntu.
 | Player (right)            | Next song         |
 
 ## Credits
-- **Cover Corp.** for that epic HoloAru teaserrr I'm hyped-
+- **Cover Corp.** for that epic HoloAlt teaserrr I'm hyped-
 - **users/49461665** @ Pixiv for lockscreen wallpaper
