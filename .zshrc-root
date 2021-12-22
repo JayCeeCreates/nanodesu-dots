@@ -19,14 +19,17 @@ function git_branch_name()
 setopt appendhistory
 setopt prompt_subst
 
-bindkey '^[[H' beginning-of-line
-bindkey '^[[F' end-of-line
-bindkey '^[[3~' delete-char
-bindkey '^[[1;5D' vi-backward-word
-bindkey '^[[1;5C' vi-forward-blank-word-end
-bindkey '^[[5~' beginning-of-history
-bindkey '^[[6~' end-of-history
-bindkey '^ ' autosuggest-accept
+bindkey '^[[H'		beginning-of-line
+bindkey '^[[1~'		beginning-of-line
+bindkey '^[[F'		end-of-line
+bindkey '^[[4~'		end-of-line
+bindkey '^[[3~'		delete-char
+bindkey '^[[1;5D'	vi-backward-word
+bindkey '^[[1;5C'	vi-forward-blank-word-end
+bindkey '^[[5~'		beginning-of-history
+bindkey '^[[6~'		end-of-history
+bindkey '^ '		autosuggest-accept
+bindkey '^H'		vi-backward-kill-word
 
 autoload -U colors && colors
 prompt='%{$fg[cyan]%}%1~ %{$fg[magenta]%}$(git_branch_name)%{%(#~$fg[blue]~$fg[yellow])%}%#%{$fg[default]%} '
