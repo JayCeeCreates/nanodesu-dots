@@ -109,5 +109,7 @@ I only tested this on Ubuntu.
 | Player (right)            | Next song         |
 
 ## Credits
-- **Cover Corp.** for that epic HoloAlt teaserrr I'm hyped-
+- **Cover Corp.** for the Hololive Alternative teaser
 - **users/49461665** @ Pixiv for lockscreen wallpaper
+
+A tribute to Uruha Rushia.
