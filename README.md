@@ -1,3 +1,5 @@
+(NOTE: This repository is now unmaintained because I have no time maintaining it, along with the fact that Uruha Rushia has been terminated. All respects to her for her future endeavors...)
+
 # Nanodesu!
 
 <p align="center">
